@@ -34,8 +34,11 @@ window.addEventListener('load', ()=> {
                 //set Icon
                 setIcons(icon, document.querySelector(".icon"));
 
+                
+                temperatureSection.addEventListener('click', changeDegreeUnit);
+
                 //Change temperature between Celsius/Farenheit
-                temperatureSection.addEventListener('click', () => {
+                function changeDegreeUnit(){
                     if(temperatureSpan.textContent === "F") {
                         temperateDegree.textContent = Math.floor(celsius);
                         temperatureSpan.textContent = "C";
@@ -43,7 +46,7 @@ window.addEventListener('load', ()=> {
                         temperateDegree.textContent = Math.floor(temperature);
                         temperatureSpan.textContent = "F";
                     }
-                });
+                };
             })
         });
     }
