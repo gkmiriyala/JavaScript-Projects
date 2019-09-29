@@ -34,4 +34,25 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-around;
+}
+
+.intro h1 {
+    font-size: 50px;
+}
+
+.intro button {
+    width: 150px;
+    height: 50px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+}
+
+.match {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
